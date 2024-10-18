@@ -13,10 +13,12 @@ const textConfig = {
     "Chúc cậu đi chơi lễ vui vẻ !",
   text12: "Cre: Ikkun",
 };
+
 $(document).ready(function () {
   // process bar
   setTimeout(function () {
     firstQuestion();
+    
     $(".spinner").fadeOut();
     $("#preloader").delay(350).fadeOut("slow");
     $("body").delay(350).css({
@@ -41,6 +43,8 @@ $(document).ready(function () {
       imageAlt: "Custom image",
     }).then(function () {
       $(".content").show(200);
+      var audio = new Audio("sound/Heybabe.mp3");
+      audio.play();
     });
   }
 
@@ -57,6 +61,7 @@ $(document).ready(function () {
     $("#yes").css("left", leftNo);
     $("#yes").css("top", topNO);
   }
+
   // move random button póition
   function moveButton() {
     var audio = new Audio("sound/Swish1.mp3");

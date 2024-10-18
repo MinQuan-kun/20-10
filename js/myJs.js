@@ -2,7 +2,7 @@ const textConfig = {
   text1: "He luu cậu!",
   text2: "Hôm nay là 20/10 nè tớ có đôi lời muốn gửi cậu ღ",
   text3: "Chúc mừng ngày Ngày Phụ nữ Việt Nam <3",
-  text4: "Chúcnhững điều tuyệt vời sẽ đến với các bạn, hãy tận hưởng niềm vui, sự yêu thương cùng người thân và bạn bè nha. Chúc các bạn luôn tươi tắn, xinh đẹp và tràn đầy năng lượng như những bông hoa ngát hương💖!, Hãy chọn cho mình 1 điều ước nhé🐧 ",
+  text4: "Chúc các bạn nữ ngày hôm nay luôn tươi tắn, xinh đẹp và tràn đầy năng lượng như những bông hoa ngát hương💖!, Hãy chọn cho mình 1 điều ước nhé🐧 ",
   text5: "Lấy chồng đại gia",
   text6: "Qua môn",
   text7: "Viết câu thần chú để qua môn",

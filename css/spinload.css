@@ -63,3 +63,11 @@
 	-webkit-transform: scaleY(1.0);
 	}
 }
+/* Thêm vào file css/style.css */
+.error-title {
+	color: red !important; /* Đổi màu tiêu đề thành đỏ */
+  }
+  
+  .error-content {
+	color: red !important; /* Đổi màu nội dung thành đỏ */
+  }

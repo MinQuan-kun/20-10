@@ -1,1 +1,1 @@
-https://tinyurl.com/Sushihihi
+Code chơi chơi đừng để ý :D

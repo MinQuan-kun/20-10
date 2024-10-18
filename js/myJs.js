@@ -43,7 +43,7 @@ $(document).ready(function () {
       imageAlt: "Custom image",
     }).then(function () {
       $(".content").show(200);
-      var audio = new Audio("sound/Heybabe.mp3");
+      var audio = new Audio("sound/CuteSong.mp3");
       audio.play();
     });
   }

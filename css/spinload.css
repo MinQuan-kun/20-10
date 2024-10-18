@@ -66,8 +66,25 @@
 /* Thêm vào file css/style.css */
 .error-title {
 	color: red !important; /* Đổi màu tiêu đề thành đỏ */
-  }
+}
   
-  .error-content {
+.error-content {
 	color: red !important; /* Đổi màu nội dung thành đỏ */
-  }
+}
+
+.special-title{
+	color: red !important; 
+}
+.special-content
+{
+	color: red !important; 
+}
+
+.weird-title
+{
+	color: chocolate !important;
+}
+.weird-content
+{
+	color: chocolate !important;
+}

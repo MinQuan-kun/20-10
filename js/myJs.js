@@ -13,7 +13,6 @@ const textConfig = {
     "Chúc cậu đi chơi lễ vui vẻ !",
   text12: "Cre: Ikkun",
 };
-
 $(document).ready(function () {
   // process bar
   setTimeout(function () {

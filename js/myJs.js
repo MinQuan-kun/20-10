@@ -1,3 +1,4 @@
+// Nội dung 
 const textConfig = {
   text1: "Hế luu cậu!",
   text2: "Hôm nay là 20/10 nè tớ có đôi lời muốn gửi cậu ღ",
@@ -10,14 +11,13 @@ const textConfig = {
   text9: "tạch tạch tạch tạch tạch tạch",
   text10: "Chúc cậu sớm đạt được nguyện vọng nhé :D",
   text11:
-    "Chúc cậu đi chơi lễ vui vẻ !",
+    "Đùa thôi, chúc cậu đi chơi lễ vui vẻ !💕 Nếu không có ai rủ cậu thì alo tớ nè :>",
   text12: "Cre: Ikkun",
 };
 
-
-
+// Khởi đầu
 $(document).ready(function () {
-  // process bar
+
   setTimeout(function () {
     firstQuestion();
     
@@ -33,6 +33,7 @@ $(document).ready(function () {
   $("#no").html(textConfig.text5);
   $("#yes").html(textConfig.text6);
 
+  // Câu hỏi đầu tiên
   function firstQuestion() {
     $(".content").hide();
     Swal.fire({
@@ -50,7 +51,7 @@ $(document).ready(function () {
     });
   }
 
-  // switch button position
+  // Hoán đổi vị trí nút
   function switchButton() {
     var audio = new Audio("sound/duck.mp3");
     audio.play();
@@ -64,7 +65,7 @@ $(document).ready(function () {
     $("#yes").css("top", topNO);
   }
 
-  // move random button póition
+  //Di chuyển nút ngẫu nhiên
   function moveButton() {
     var audio = new Audio("sound/Swish1.mp3");
     audio.play();
@@ -91,7 +92,7 @@ $(document).ready(function () {
     if (screen.width >= 900) switchButton();
   });
 
-  // generate text in input
+  // Chuyển hóa từ nhập của người dùng
   function textGenerate() {
     var n = "";
     var text = " " + textConfig.text9;
@@ -111,7 +112,7 @@ $(document).ready(function () {
     $("#txtReason").val(n);
   }
 
-  // show popup
+  // Hiện thông báo 
   $("#yes").click(function () {
     var audio = new Audio("sound/tick.mp3");
     audio.play();
@@ -120,11 +121,11 @@ $(document).ready(function () {
       html: true,
       width: 900,
       padding: "3em",
-      html: "<input type='text' class='form-control' id='txtReason'  placeholder='Whyyy'>",
+      html: "<input type='text' class='form-control' id='txtReason'  placeholder='Hehe'>",
       background: '#fff url("img/iput-bg.jpg")',
       backdrop: `
                     rgba(0,0,123,0.4)
-                    url("img/cute-dancing.gif")
+                    url("img/Hehehe.gif")
                     left top
                     no-repeat
                   `,
@@ -140,6 +141,12 @@ $(document).ready(function () {
           width: 900,
           confirmButtonText: textConfig.text12,
           background: '#fff url("img/iput-bg.jpg")',
+          backdrop:`
+                    rgba(0,0,123,0.4)
+                    url("img/Tim1.gif")
+                    left top
+                    no-repeat
+                  `,
           title: textConfig.text10,
           text: textConfig.text11,
           confirmButtonColor: "#83d0c9",

@@ -1,12 +1,12 @@
 // Nội dung 
 const textConfig = {
   text1: "Hế luu cậu nha!",
-  text2: "Hôm nay là 20/10 nè tớ có đôi lời muốn gửi cậu ღ",
-  text3: "Chúc mừng Ngày Phụ nữ Việt Nam <3",
-  text4: "Ngày hôm nay không bông hoa nào đẹp hơn cậu đâu <3 Chúc cậu ngày nào cũng luôn tươi tắn, xinh đẹp và tràn đầy năng lượng, mong những điều tốt đẹp nhất sẽ đến với cậu💖!, Hãy chọn cho mình 1 điều ước nhé🐧 ",
+  text2: "20/10 vui vẻ ღNgày hôm nay không bông hoa nào đẹp hơn cậu đâu <3 Chúc cậu ngày nào cũng luôn tươi tắn, xinh đẹp và tràn đầy năng lượng, mong những điều tốt đẹp nhất sẽ đến với cậu💖!",
+  text3: "Hãy chọn cho mình 1 điều ước nhé",
+  text4: "Hoan hỉ hoan hỉ ",
   text5: "Lấy chồng đại gia",
-  text6: "Qua môn",
-  text7: "Viết câu thần chú để qua môn",
+  text6: "Đạt điểm A mọi môn",
+  text7: "Viết câu thần chú để đạt full A",
   text8: "Gửi thần muỗng 🐧",
   text9: "tạch tạch tạch tạch tạch tạch",
   text10: "Chúc cậu sớm đạt được nguyện vọng nhé :D",
@@ -38,11 +38,13 @@ $(document).ready(function () {
     $(".content").hide();
     Swal.fire({
       title: textConfig.text1,
-      text: textConfig.text2,
-      imageUrl: "img/cuteCat.jpg",
-      imageWidth: 300,
+      html:`
+      20/10 vui vẻ ღNgày hôm nay không bông hoa nào đẹp hơn cậu đâu <3 Chúc cậu ngày nào cũng luôn tươi tắn, xinh đẹp và tràn đầy năng lượng, mong những điều tốt đẹp nhất sẽ đến với cậu💖!
+      `,
+      imageUrl: "img/20-10.jpg",
+      imageWidth: 400,
       imageHeight: 300,
-      background: '#fff url("img/iput-bg.jpg")',
+      background: '#fff url("img/R.jpg")',
       imageAlt: "Custom image",
     }).then(function () {
       $(".content").show(200);
@@ -118,11 +120,15 @@ $(document).ready(function () {
     audio.play();
     Swal.fire({
       title: textConfig.text7,
+      customClass: 
+                {
+                  title: 'weird-title', // Lớp tùy chỉnh cho tiêu đề
+                },
       html: true,
       width: 900,
       padding: "3em",
       html: "<input type='text' class='form-control' id='txtReason'  placeholder='Hehe'>",
-      background: '#fff url("img/iput-bg.jpg")',
+      background: '#fff url("img/Muongsama.jpg")',
       backdrop: `
                     rgba(0,0,123,0.4)
                     url("img/Hehehe.gif")
@@ -140,7 +146,7 @@ $(document).ready(function () {
         Swal.fire({
           width: 900,
           confirmButtonText: textConfig.text12,
-          background: '#fff url("img/iput-bg.jpg")',
+          background: '#fff url("img/heheeee.png")',
           backdrop:`
                     rgba(0,0,123,0.4)
                     url("img/Tim1.gif")

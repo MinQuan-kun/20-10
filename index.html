@@ -164,13 +164,13 @@
           "Hưng", "Khoa", "Long", "Mạnh", "Nhật", 
           "Phú", "Quốc", "Sơn", "Thắng", "Tùng", 
           "Vinh", "Vũ", "Điền", "Bảo", "Đạt", 
-          "Dương","Khánh",
+          "Dương","Khánh", "Ấn",
           "Đức", "Hải", "Lâm", "Nguyên", "Phong", "Tín", "Huy", "Tú", "Đại"
           ];
         //Danh sách tên lạ 50% từ minh tín
           var specialName2 = 
           [
-            "LmaoLmao", "nhờn", "Mẹ ông béo", "M ngu", "Surima", 
+            "LmaoLmao", "nhờn", "Mẹ ông béo", "M ngu", "Surima","Mẹ m béo", 
             "Béo", "Sói cô độc", "Má ông ", "Hồng hài nhi", "Kim sí điểu", 
             "Ngưu ma vương", "Báo", "Mẹ mày", "Thợ săn hồng hài nhi"
           ];
@@ -183,8 +183,11 @@
               Swal.fire
               ({
                 icon: "info",
+                html: `
+                  <img src="img/Gay.jpg" style="width:250px;">
+                `,
                 title: "Gì v, ông là nam mà .-.",
-                // text: "ông là nam mà .-.",
+
                 customClass: 
                 {
                   title: 'special-title', // Lớp tùy chỉnh cho tiêu đề
@@ -195,17 +198,22 @@
             //Xử lý các tên lạ
             else if (specialName2.some(name => new RegExp(`^${name}[^a-zA-Z0-9]*$`).test(userName))) 
             {
+              
               Swal.fire
               ({
+                
                 icon: "warning",
                 title: "Tên gì kì v :)",
-                text: "Chắc chắn là thằng Minh tín",
+                html: `
+                  <img src="img/Meme-meo-bieu-cam-3-1024x1024.jpg" style="width:250px;">
+                `,
                 customClass: 
                 {
                   title: 'weird-title', // Lớp tùy chỉnh cho tiêu đề
                   content: 'weird-content' // Lớp tùy chỉnh cho nội dung
                 }
               });
+              
             } 
             else 
             {
@@ -219,8 +227,10 @@
           Swal.fire
           ({
               icon: "error",
-              title: "Oops...",
-              text: "Bạn phải nhập tên trước khi tiếp tục!",
+              title: "Bạn phải nhập tên trước khi tiếp tục!",
+              html: `
+                <img src="img/Lap.gif" style="width:250px;">
+              `,
               customClass: 
               {
                 title: 'error-title', // Lớp tùy chỉnh cho tiêu đề

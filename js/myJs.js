@@ -14,6 +14,8 @@ const textConfig = {
   text12: "Cre: Ikkun",
 };
 
+
+
 $(document).ready(function () {
   // process bar
   setTimeout(function () {
@@ -122,7 +124,7 @@ $(document).ready(function () {
       background: '#fff url("img/iput-bg.jpg")',
       backdrop: `
                     rgba(0,0,123,0.4)
-                    url("img/giphy2.gif")
+                    url("img/cute-dancing.gif")
                     left top
                     no-repeat
                   `,
@@ -158,3 +160,5 @@ $(document).ready(function () {
     });
   });
 });
+
+

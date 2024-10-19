@@ -97,3 +97,17 @@ header h4 {
 }
 
 
+#floatingGif {
+  position: fixed;
+  bottom: 20px; /* Khoảng cách từ dưới lên */
+  right: 20px;  /* Khoảng cách từ phải sang */
+  width: 150px; /* Chiều rộng của GIF */
+  z-index: 1000; /* Đảm bảo ảnh luôn nằm trên cùng */
+  opacity: 0.9;  /* Làm mờ nhẹ nếu muốn */
+  transition: opacity 0.3s ease-in-out;
+}
+
+#floatingGif:hover {
+  opacity: 1; /* Tăng độ rõ khi di chuột */
+}
+

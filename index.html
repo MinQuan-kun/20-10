@@ -1,192 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Nhập tên của cậu :></title>
+    <title>Your name :3</title>
+    <!-- Required meta tags -->
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Your name</title> <!-- Đặt tên hiển thị trên tab -->
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" 
+    />
+    
+    <!-- Đặt tên hiển thị trên tab -->
+    <title>Your name</title> 
+
     <!-- Liên kết tới tệp CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/spinload.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
   </head>
-   <!-- Custom CSS -->
-   <style>
-    body {
-        font-family: 'Pacifico', cursive;
-        background: linear-gradient(135deg, #ff9a9e 10%, #fecfef 100%);
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+
+  <!-- Custom CSS -->
+  <style>
+
+
+    /*Giao diện cho trang nhập tên */
+    body 
+    {
+      font-family: 'Pacifico', cursive;
+      background: linear-gradient(135deg, #ff9a9e 10%, #fecfef 100%);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
     }
 
-    #nameInputSection {
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 20px;
-        padding: 20px;
-        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-        width: 400px; /* Đặt chiều rộng cho box */
+    /* Phần hiển thị nhập tên */
+    #nameInputSection 
+    {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s ease;
+      /* Đặt chiều rộng cho box */
+      width: 250px; 
     }
 
-    input {
-        border: none;
-        border-radius: 30px;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-        padding: 10px 20px;
-        width: 100%;
-        transition: 0.3s ease;
-        outline: none;
+    /* Phần người dùng nhập */
+    input 
+    {
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+      width: 100%;
+      transition: 0.3s ease;
+      outline: none;
     }
 
-    input:focus {
-        transform: scale(1.05);
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    input:focus 
+    {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     }
 
-    button {
-        border: none;
-        border-radius: 30px;
-        padding: 10px 30px;
-        background: linear-gradient(45deg, #ff512f, #dd2476);
-        color: white;
-        font-size: 18px;
-        cursor: pointer;
-        transition: 0.3s ease;
-        outline: none;
+    /* Nút gửi */
+    button 
+    {
+      border: none;
+      border-radius: 30px;
+      padding: 10px 30px;
+      background: linear-gradient(45deg, #ff512f, #dd2476);
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      outline: none;
     }
 
-    button:hover {
-        transform: translateY(-3px);
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    button:hover 
+    {
+      transform: translateY(-3px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     }
 
     /* Hiệu ứng cho input nếu trống */
-    .shake {
-        animation: shake 0.5s;
+    .shake 
+    {
+      animation: shake 0.5s;
     }
 
-    @keyframes shake {
-        0% { transform: translateX(0); }
-        25% { transform: translateX(5px); }
-        50% { transform: translateX(-5px); }
-        75% { transform: translateX(5px); }
-        100% { transform: translateX(0); }
+    @keyframes shake 
+    {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(5px); }
+      50% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+      100% { transform: translateX(0); }
     }
-</style>
-</head>
-<body>
+  
+    #gif1
+    {
+    padding: 0px;
+    width: 200px; /* Chiều rộng của GIF */
+    
+    }
+    #gif2
+    {
+      padding: 0px;
+      width: 40px; /* Chiều rộng của GIF */
+    }
+  </style>
 
-</div>
   <body>
-    <!-- Hình nền -->
-    <div id="bg2"></div>
-    <!-- Hộp thoại nhập tên -->
-    <div class="container content" id="nameInputSection">
-      <h1>I'm not a robot</h1>
-      <div class="input-group mb-3">
-        <input type="text" id="txtName" placeholder="Tên của cậu" class="form-control" />
-      </div>
+
+  </div>
+
+  <img src="img/cute-dancing.gif" id="floatingGif" alt="GIF">
+
+      <!-- Hình nền -->
+      <div id="bg2"></div>
+      <!-- Hộp thoại nhập tên -->
+      <div class="container content" id="nameInputSection">
+        <img src="img/38ffa4616c7e43522afa0d3569fb522b.gif" id ="gif1" alt="icon">
+        <div class="input-group mb-3">
+          <input type="text" id="txtName" placeholder="Tên của cậu" class="form-control" />
+        </div>
 
       <div class="input-group mb-3">
         <input type="text" id="txtInfor" placeholder="1+1 = ?" class="form-control" />
       </div>
 
-      <!--Nút gửi-->
+        <!--Nút gửi-->
       <div class="input-group">
         <div class="input-group-append">
           <button id="submitName" type="button" class="btn btn-primary">
             Gửi
           </button>
+          <img src="img/Hi.gif" id ="gif2" alt="icon">
         </div>
       </div>
     </div>
 
-    <h6>Tính năng check robot :></H4>
-    <audio src="./sound/CuteSong.mp3" autoplay></audio>
+      <h6>Tính năng check robot :></H4>
+      <audio src="./sound/CuteSong.mp3" autoplay></audio>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script>
-      $(document).ready(function () {
-    // Sự kiện khi người dùng nhấn nút gửi tên
-    $("#submitName").click(function () 
-    {
-      //Danh sách tên con trai tôi hay được nghe
-      var specialNames = 
-      [
-      "ITBoy", "Minh Tín", "Tỷ", "Kiệt", "Nam", 
-      "Boy", "Quân", "Tuấn", "Hậu", 
-      "Tiến", "An", "Bình", "Cường", "Duy", 
-      "Hưng", "Khoa", "Long", "Mạnh", "Nhật", 
-      "Phú", "Quốc", "Sơn", "Thắng", "Tùng", 
-      "Vinh", "Vũ", "Điền", "Bảo", "Đạt", 
-      "Dương","Khánh",
-      "Đức", "Hải", "Lâm", "Nguyên", "Phong", "Tín", "Huy", "Tú", "Đại"
-      ];
-      //Danh sách tên lạ 50% từ minh tín
-      var specialName2 = 
-      [
-        "LmaoLmao", "nhờn", "Mẹ ông béo", "M ngu", "Surima", 
-        "Béo", "Sói cô độc", "Má ông ", "Hồng hài nhi", "Kim sí điểu", 
-        "Ngưu ma vương", "Báo", "Mẹ mày", "Thợ săn hồng hài nhi"
-      ];
-      var userName = $("#txtName").val(); // Lấy tên người dùng nhập
-      if (userName !== "") 
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script>
+      $(document).ready(function () 
       {
-        // Xử lý các tên là con trai :D
-        if (specialNames.some(name => new RegExp(`^${name}[^a-zA-Z0-9]*$`).test(userName))) {
-          Swal.fire
-          ({
-              icon: "info",
-              title: "Gì v, ông là nam mà .-.",
-              // text: "ông là nam mà .-.",
-              customClass: 
-              {
-              title: 'special-title', // Lớp tùy chỉnh cho tiêu đề
-              content: 'special-content' // Lớp tùy chỉnh cho nội dung
-              }
-          });
-          }
-          //Xử lý các tên lạ
-          else if (specialName2.some(name => new RegExp(`^${name}[^a-zA-Z0-9]*$`).test(userName))) {
-            Swal.fire({
+      // Sự kiện khi người dùng nhấn nút gửi tên
+        $("#submitName").click(function () 
+        {
+        //Danh sách tên con trai tôi hay được nghe
+          var specialNames = 
+          [
+          "ITBoy", "Minh Tín", "Tỷ", "Kiệt", "Nam", 
+          "Boy", "Quân", "Tuấn", "Hậu", 
+          "Tiến", "An", "Bình", "Cường", "Duy", 
+          "Hưng", "Khoa", "Long", "Mạnh", "Nhật", 
+          "Phú", "Quốc", "Sơn", "Thắng", "Tùng", 
+          "Vinh", "Vũ", "Điền", "Bảo", "Đạt", 
+          "Dương","Khánh",
+          "Đức", "Hải", "Lâm", "Nguyên", "Phong", "Tín", "Huy", "Tú", "Đại"
+          ];
+        //Danh sách tên lạ 50% từ minh tín
+          var specialName2 = 
+          [
+            "LmaoLmao", "nhờn", "Mẹ ông béo", "M ngu", "Surima", 
+            "Béo", "Sói cô độc", "Má ông ", "Hồng hài nhi", "Kim sí điểu", 
+            "Ngưu ma vương", "Báo", "Mẹ mày", "Thợ săn hồng hài nhi"
+          ];
+          var userName = $("#txtName").val(); // Lấy tên người dùng nhập
+          if (userName !== "") 
+          {
+            // Xử lý các tên là con trai :D
+            if (specialNames.some(name => new RegExp(`^${name}[^a-zA-Z0-9]*$`).test(userName))) 
+            {
+              Swal.fire
+              ({
+                icon: "info",
+                title: "Gì v, ông là nam mà .-.",
+                // text: "ông là nam mà .-.",
+                customClass: 
+                {
+                  title: 'special-title', // Lớp tùy chỉnh cho tiêu đề
+                  content: 'special-content' // Lớp tùy chỉnh cho nội dung
+                }
+              });
+            }
+            //Xử lý các tên lạ
+            else if (specialName2.some(name => new RegExp(`^${name}[^a-zA-Z0-9]*$`).test(userName))) 
+            {
+              Swal.fire
+              ({
                 icon: "warning",
                 title: "Tên gì kì v :)",
                 text: "Chắc chắn là thằng Minh tín",
-                customClass: {
-                    title: 'weird-title', // Lớp tùy chỉnh cho tiêu đề
-                    content: 'weird-content' // Lớp tùy chỉnh cho nội dung
+                customClass: 
+                {
+                  title: 'weird-title', // Lớp tùy chỉnh cho tiêu đề
+                  content: 'weird-content' // Lớp tùy chỉnh cho nội dung
                 }
-            });
-        } 
-          else 
-          {
-            // Chuyển hướng đến trang chào mừng
-            window.location.href = "Welcome.html";
-          }
-      }
-      else 
-      {
-        // Xử lý khi không nhập tên
-        Swal.fire
-        ({
-            icon: "error",
-            title: "Oops...",
-            text: "Bạn phải nhập tên trước khi tiếp tục!",
-            customClass: 
+              });
+            } 
+            else 
             {
-              title: 'error-title', // Lớp tùy chỉnh cho tiêu đề
-              content: 'error-content' // Lớp tùy chỉnh cho nội dung
+              // Chuyển hướng đến trang chào mừng
+              window.location.href = "Welcome.html";
             }
-        });
-      }
-    });
-});
-</script>
-</body>
+          }
+        else 
+        {
+          // Xử lý khi không nhập tên
+          Swal.fire
+          ({
+              icon: "error",
+              title: "Oops...",
+              text: "Bạn phải nhập tên trước khi tiếp tục!",
+              customClass: 
+              {
+                title: 'error-title', // Lớp tùy chỉnh cho tiêu đề
+                content: 'error-content' // Lớp tùy chỉnh cho nội dung
+              }
+          });
+        }
+      });
+  });
+    </script>
+  </body>
 </html>

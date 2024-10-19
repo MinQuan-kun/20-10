@@ -1,6 +1,6 @@
 // Nội dung 
 const textConfig = {
-  text1: "Hế luu cậu!",
+  text1: "Hế luu cậu nha!",
   text2: "Hôm nay là 20/10 nè tớ có đôi lời muốn gửi cậu ღ",
   text3: "Chúc mừng Ngày Phụ nữ Việt Nam <3",
   text4: "Ngày hôm nay không bông hoa nào đẹp hơn cậu đâu <3 Chúc cậu ngày nào cũng luôn tươi tắn, xinh đẹp và tràn đầy năng lượng, mong những điều tốt đẹp nhất sẽ đến với cậu💖!, Hãy chọn cho mình 1 điều ước nhé🐧 ",

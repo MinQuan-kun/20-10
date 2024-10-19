@@ -7,12 +7,12 @@ const textConfig = {
   text5: "Lấy chồng đại gia",
   text6: "Qua môn",
   text7: "Viết câu thần chú để qua môn",
-  text8: "Gửi cho tớ <3",
+  text8: "Gửi thần muỗng 🐧",
   text9: "tạch tạch tạch tạch tạch tạch",
   text10: "Chúc cậu sớm đạt được nguyện vọng nhé :D",
   text11:
-    "Đùa thôi, chúc cậu đi chơi lễ vui vẻ !💕 Nếu không có ai rủ cậu thì alo tớ nè :>",
-  text12: "Cre: Ikkun",
+    "Đùa thôi, chúc cậu luôn xinh đẹp học giỏi, đi chơi lễ vui vẻ nha !💕",
+  text12: "💕",
 };
 
 // Khởi đầu
@@ -151,7 +151,7 @@ $(document).ready(function () {
           text: textConfig.text11,
           confirmButtonColor: "#83d0c9",
           onClose: () => {
-            window.location = "https://www.facebook.com/profile.php?id=100054549385715";
+            window.location = "https://www.facebook.com/";
           },
         });
       }
